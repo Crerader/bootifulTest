@@ -4,7 +4,7 @@ branches:
   only:
   - master
 script:
-- "./mvnw clean test"
+- "./mvnw clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar"
 after_deploy:
 - echo "done deploying"
 env:
