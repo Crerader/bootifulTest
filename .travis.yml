@@ -2,8 +2,11 @@ language: java
 jdk: oraclejdk8
 branches:
   only:
-    - master
+  - master
 script:
-  - "./mvnw clean test"
+- "./mvnw clean test"
 after_deploy:
-    - echo "done deploying"
+- echo "done deploying"
+env:
+  global:
+    secure: S4CWHuWDm4pgvckMOLoQP1dZuQHvAp9ODUtMPrWTqRSPplJxjakgchmRjlhSKK0CeVooySOIT6P0rB9dkEiRbgJqDhsOrt96KwHzZV1UaSFwhM4AOJBjCeOrd0DmRncdkOkMx2DBHXbYmTFpx0Qky92Y1JYlcvmdZhnZFv2L0l1/g119eA3Mnikl9YenoxBpLkurrXOGpP/V3ex5f3l3knHmPzyESdDjdG9m9aaC7HcGjme0TXae/JsHDiuIpM7FA0y7VfxnzuZVEJ+FMOsZzEF6i3gmCesdXJ654UmViGdpzVdlfAw0jInh7IAMZ7s/xzw0BkI+8th9mUHhVK9liI+o5r6xO5xiSi9asranBQ+BEune4h0Bkf64qc8v130wACCkQL9o+PgTwtb/4euS69nLU7RYxgLWyg2XzV/xLAhQS90fGGwgmGPFOYHalIm7b33KqZbjHYaOb30EHZOA3UwFW+1zpe/OCSbk/nR0/XvVKYa9u5dWqjZKV7PUmsH/6cKdmLXd8zl95Z1t+4f0mc7uePQuGnYPwn03PqDygcsnW0ar793GL8DQzdNq8Mzzj38stUxjt4YbEWX2IjYZvImGmrrp4J96cHPtgO7QBP5KimYJj5RtahwL2cB1DTkyMaXs3TfSqP258nfoot3kHGaqZ/SWhkfCYi/OcJjrP1w=
