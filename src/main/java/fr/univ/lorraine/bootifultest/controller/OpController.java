@@ -1,12 +1,12 @@
 package fr.univ.lorraine.bootifultest.controller;
 
-import fr.univ.lorraine.bootifultest.service.AdderService;
 import org.springframework.web.bind.annotation.*;
+import fr.univ.lorraine.bootifultest.service.AdderService;
 
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
 public class OpController {
-    
+
     private AdderService service;
 
     public OpController(AdderService service){
