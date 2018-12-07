@@ -12,7 +12,7 @@ public class AdderService {
      * generate a random number
      */
     public void baseNum() {
-        this.num = (int )Math.random()*100;
+        this.num = (int)Math.random()*100;
     }
 
     /**
@@ -22,7 +22,7 @@ public class AdderService {
         if(this.num == 0){
             this.baseNum();
         }
-        return num;
+        return this.num;
     }
 
     /**
@@ -38,7 +38,7 @@ public class AdderService {
     }
 
     /**
-     * Accumulate 
+     * Accumulate
      * @param adder
      * @return
      */
