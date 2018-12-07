@@ -1,6 +1,6 @@
-package fr.univ.lorraine.bootifultest.Controller;
+package fr.univ.lorraine.bootifultest.controller;
 
-import fr.univ.lorraine.bootifultest.Service.AdderService;
+import fr.univ.lorraine.bootifultest.service.AdderService;
 import org.springframework.web.bind.annotation.*;
 
 @CrossOrigin(origins = "http://localhost:4200")

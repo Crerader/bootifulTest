@@ -12,7 +12,8 @@ public class AdderService {
      * generate a random number
      */
     public void baseNum() {
-        this.num = (int)Math.random()*100;
+        this.num = (int) (Math.random()*100);
+        System.out.println(this.num);
     }
 
     /**
