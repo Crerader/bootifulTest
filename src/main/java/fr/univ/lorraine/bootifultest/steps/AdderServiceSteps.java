@@ -20,20 +20,24 @@ public class AdderServiceSteps {
         base = this.adderService.currentBase();
         this.givenNumber = adder;
     }
+
     public void whenAdd() {
         sum = this.adderService.add(givenNumber);
     }
+
     public void summedUp() {
-        assertEquals(""+base + givenNumber,base + givenNumber, sum);
+        assertEquals("" + base + givenNumber, base + givenNumber, sum);
     }
+
     public void sumWrong() {
-        assertNotEquals("Not Eaquals : "+base + givenNumber,base + givenNumber, sum);
+        assertNotEquals("Not Eaquals : " + base + givenNumber, base + givenNumber, sum);
     }
+
     public void whenAccumulate() {
         sum = adderService.accumulate(givenNumber);
     }
 
-    public int getGivenNumberr(){
+    public int getGivenNumberr() {
         return this.givenNumber;
     }
 }
