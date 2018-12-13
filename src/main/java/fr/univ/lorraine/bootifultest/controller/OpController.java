@@ -19,15 +19,15 @@ public class OpController {
         return this.service.currentBase();
     }
 
-    @PostMapping("/add/current")
+    @PostMapping("/add/current/{number}")
     @CrossOrigin(origins = "http://localhost:4200")
-    public int add(@RequestParam int num){
-        return this.service.add(num);
+    public int add(@PathVariable int number){
+        return this.service.add(number);
     }
 
-    @PostMapping("/accumulate/current")
+    @PostMapping("/accumulate/current/{number}")
     @CrossOrigin(origins = "http://localhost:4200")
-    public int accumulate(@RequestParam int num){
-        return this.service.accumulate(num);
+    public int accumulate(@PathVariable int number){
+        return this.service.accumulate(number);
     }
 }
